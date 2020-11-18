@@ -1,7 +1,9 @@
 <?php
-
     //__DIR__  document root
     include_once __DIR__ .'\..\..\db-helper.php';
+    $sqlStatement = "";
+
+    
 
   try
   {
@@ -10,7 +12,7 @@
     $sqlStatment = "INSERT INTO Question ( ssuid, qtext, qAnswerFormula) VALUES ( ".GetNumber($json["ssuid"]).", '".GetString($json["qtext"])."', '".GetString($json["qAnswerFormula"])."');";
 
     //open the database
-    $db = new PDO('sqlite:C:\work_eDrive\baburaj\gitrepo\subjecttrainer\pJSON\SQLite3\subject_trainer.sqlite');
+    $db = new PDO(GetSQLite());
 
     //insert some data...
     $db->exec($sqlStatment);

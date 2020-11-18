@@ -28,7 +28,7 @@
     $sqlStatment = SqlDataReplace(":qvid:", $qvid, $sqlStatment);
 
     //open the database
-    $db = new PDO('sqlite:C:\work_eDrive\baburaj\gitrepo\subjecttrainer\pJSON\SQLite3\subject_trainer.sqlite');
+    $db = new PDO(GetSQLite());
 
     //insert some data...
     $db->exec($sqlStatment);

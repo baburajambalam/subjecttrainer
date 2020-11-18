@@ -1,8 +1,13 @@
 <?php
+
+    //__DIR__  document root
+    include_once __DIR__ .'\..\..\db-helper.php';
+    $sqlStatement = "";
+
   try
   {
     //open the database
-    $db = new PDO('sqlite:C:\work_eDrive\baburaj\gitrepo\subjecttrainer\pJSON\SQLite3\subject_trainer.sqlite');
+    $db = new PDO(GetSQLite());
 
     //now output the data to a simple html table...
     print "<table border=1>";

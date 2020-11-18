@@ -19,7 +19,7 @@ function GetSQLite(){
     }
 
     if ($_SERVER['HTTP_HOST'] =="subject-trainer.a-goldmine.com") {
-        return 'sqlite:/home/u246460160/public_html/subject-trainer/pJSON/SQLite3/subject_trainer.sqlite';
+        return 'sqlite:/public_html/subject-trainer/pJSON/SQLite3/subject_trainer.sqlite';
     }
 
     return "-";
