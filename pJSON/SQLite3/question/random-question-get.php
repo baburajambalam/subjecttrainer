@@ -1,7 +1,7 @@
 <?php
 
   //__DIR__  document root
-  include_once __DIR__ .'\..\..\db-helper.php';
+  include_once __DIR__ .'/../../db-helper.php';
   $sqlStatment = "";
 
   try
