@@ -44,7 +44,7 @@
 
 		<div id="DivSaveFormDataAsQuestion" style="display:none">
         {
-			"url":"http://localhost:81/pJSON/SQLite3/question/question-edit-row.php",
+			"url":"/pJSON/SQLite3/question/question-edit-row.php",
             "payload":{
                 "action":"SaveFormDataAndUpdateRowGetRowID"
             }
@@ -52,7 +52,7 @@
     	</div>
 		<div id="DivDisplayQuestion" style="display:none">
         {
-            "url":"http://localhost:81/pJSON/SQLite3/question/question-get.php",
+            "url":"/pJSON/SQLite3/question/question-get.php",
             "payload":{
                 "formID":"form_118102",
 				"action":"QueryData"

@@ -56,7 +56,7 @@
 
 		<div id="DivSaveFormDataAsQuestion" style="display:none">
         {
-			"url":"http://localhost:81/pJSON/SQLite3/question/question-variable-add-new-row.php",
+			"url":"/pJSON/SQLite3/question/question-variable-add-new-row.php",
 			"action":"SaveFormDataAndGetNewRowID",
             "payload":{
                 "action":"SaveFormDataAndGetNewRowID"
@@ -66,7 +66,7 @@
 
 		<div id="DivDeleteFormDataAsQuestion" style="display:none">
         {
-			"url":"http://localhost:81/pJSON/SQLite3/question/question-variable-add-new-row.php",
+			"url":"/pJSON/SQLite3/question/question-variable-add-new-row.php",
 			"action":"SaveFormDataAndGetNewRowID",
             "payload":{
                 "action":"SaveFormDataAndGetNewRowID"
@@ -79,7 +79,7 @@
 
 		<div id="DivDisplayQuestionVariable" style="display:none">
         {
-            "url":"http://localhost:81/pJSON/SQLite3/question/question-variable-get.php",
+            "url":"/pJSON/SQLite3/question/question-variable-get.php",
             "payload":{
                 "formID":"form_118102",
 				"action":"QueryData"

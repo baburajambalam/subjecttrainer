@@ -14,7 +14,7 @@
     <h1>    
         <div id="DisplayAllSubjects" style="display:none;">
             {
-                "url":"http://localhost:81/pJSON/SQLite3/school-subject/list-of-grade-term-subjects.php",
+                "url":"/pJSON/SQLite3/school-subject/list-of-grade-term-subjects.php",
                 "payload":{
                     "formID":"form_118102",
                     "action":"ShowAllSubjects"
@@ -34,7 +34,7 @@
     <br>
     <div id="DivDisplayPrevNext" style="display:none;">
         {
-            "url":"http://localhost:81/pJSON/SQLite3/question/question-get-prev-next.php",
+            "url":"/pJSON/SQLite3/question/question-get-prev-next.php",
             "payload":{
                 "formID":"form_118102",
                 "action":"ShowPrevNext"
@@ -56,7 +56,7 @@
     </div>
      <div id="DivDisplayQuestion" style="display:none;">
         {
-            "url":"http://localhost:81/pJSON/SQLite3/question/question-get.php",
+            "url":"/pJSON/SQLite3/question/question-get.php",
             "payload":{
                 "formID":"form_118102",
                 "action":"ShowQuestion"
@@ -83,7 +83,7 @@
     <br>
     <div id="DivDisplayQuestionVariable" style="display:none;">
         {
-            "url":"http://localhost:81/pJSON/SQLite3/question/question-variable-get.php",
+            "url":"/pJSON/SQLite3/question/question-variable-get.php",
             "payload":{
                 "formID":"form_118102",
                 "action":"ShowQuestion"

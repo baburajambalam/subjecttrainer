@@ -18,7 +18,7 @@
 
     <div id="displaydataJSON">
         {
-            "url":"http://localhost:81/pJSON/getdata.php",
+            "url":"/pJSON/getdata.php",
             "payload":{
                 "action":"PreviousQuestion"
             }
@@ -27,7 +27,7 @@
 
     <div id="displaydataHTML">
         {
-            "url":"http://localhost:81/pJSON/getdataHTML.php",
+            "url":"/pJSON/getdataHTML.php",
             "payload":{
                 "action":"PreviousQuestion"
             }
@@ -85,7 +85,7 @@
             DivInitJSON("displaydataJSON");
             DivInitHTML("displaydataHTML");
             /*
-            postData('http://localhost:81/pJSON/getdata.php', {element01: 4  })
+            postData('/pJSON/getdata.php', {element01: 4  })
             .then(data => {
                 //console.log(data); // JSON data parsed by `data.json()` call
                 document.getElementById("displaydata").innerText= JSON.stringify(data);

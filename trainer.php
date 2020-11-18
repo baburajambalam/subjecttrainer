@@ -22,7 +22,7 @@
     <div id="DisplayAllSubjectsServiceData" style="display:none;"></div>    
     <div id="DisplayAllSubjects" style="display:none;">
         {
-            "url":"http://localhost:81/pJSON/SQLite3/school-subject/list-of-grade-term-subjects.php",
+            "url":"/pJSON/SQLite3/school-subject/list-of-grade-term-subjects.php",
             "payload":{
                 "formID":"form_118102",
 				"action":"QueryData"

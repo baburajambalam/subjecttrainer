@@ -24,7 +24,7 @@
     <div id="DivListOfQuestionsServiceData" style="display:none;"></div>    
     <div id="DivListOfQuestionsController" style="display:none;">
         {
-            "url":"http://localhost:81/pJSON/SQLite3/question/question-get-list.php",
+            "url":"/pJSON/SQLite3/question/question-get-list.php",
             "payload":{
                 "formID":"form_118102",
                 "action":"ShowQuestion"
@@ -53,7 +53,7 @@
     <div id="DivDisplayQuestionServiceData" style="display:none;"></div>    
      <div id="DivDisplayQuestion" style="display:none;">
         {
-            "url":"http://localhost:81/pJSON/SQLite3/question/random-question-get.php",
+            "url":"/pJSON/SQLite3/question/random-question-get.php",
             "payload":{
                 "formID":"form_118102",
                 "action":"ShowQuestion"

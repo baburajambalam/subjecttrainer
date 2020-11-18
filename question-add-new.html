@@ -707,7 +707,7 @@ async function postDataGetJSON(url = '', data = {}) {
 
 //document.getElementById("DisplayPreviousQuestion").innerText
 
-postDataGetJSON('http://localhost:81/pJSON/getdata.php', {element01: 4})
+postDataGetJSON('/pJSON/getdata.php', {element01: 4})
   .then(data => {
     //console.log(data); // JSON data parsed by `data.json()` call
     document.getElementById("DisplayPreviousQuestion").innerText= JSON.stringify(data);

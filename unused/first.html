@@ -14,7 +14,7 @@
     <h1>Hello, world!</h1>
 
     <div id="displaydata">
-        {"url":"http://localhost:81/pJSON/getdata.php"}
+        {"url":"/pJSON/getdata.php"}
         </div>
 
 
@@ -48,7 +48,7 @@
         
         //document.getElementById("DisplayPreviousQuestion").innerText
         function start(){
-            postData('http://localhost:81/pJSON/getdata.php', {element01: 4  })
+            postData('/pJSON/getdata.php', {element01: 4  })
             .then(data => {
                 //console.log(data); // JSON data parsed by `data.json()` call
                 document.getElementById("displaydata").innerText= JSON.stringify(data);

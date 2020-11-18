@@ -74,7 +74,7 @@
 
 		<div id="DivSaveFormDataAsChapter" style="display:none">
         {
-			"url":"http://localhost:81/pJSON/SQLite3/school-subject/chapter-variable-add-new-row.php",
+			"url":"/pJSON/SQLite3/school-subject/chapter-variable-add-new-row.php",
 			"action":"SaveFormDataAndGetNewRowID",
             "payload":{
                 "action":"SaveFormDataAndGetNewRowID"
@@ -84,7 +84,7 @@
 
 		<div id="DivDeleteFormDataAsChapter" style="display:none">
         {
-			"url":"http://localhost:81/pJSON/SQLite3/school-subject/chapter-variable-add-new-row.php",
+			"url":"/pJSON/SQLite3/school-subject/chapter-variable-add-new-row.php",
 			"action":"DeleteFormDataAndRowGetRowID",
             "payload":{
                 "action":"DeleteFormDataAndRowGetRowID"
@@ -98,7 +98,7 @@
 		
 		<div id="DivDisplayFormDataAsChapter" style="display:none">
         {
-            "url":"http://localhost:81/pJSON/SQLite3/school-subject/list-of-grade-term-subjects.php",
+            "url":"/pJSON/SQLite3/school-subject/list-of-grade-term-subjects.php",
             "payload":{
                 "formID":"form_118102",
 				"action":"QueryData"
