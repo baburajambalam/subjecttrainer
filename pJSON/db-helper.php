@@ -13,6 +13,18 @@ $const_value_enclosed_in_quotes = true;
 $const_value_not_enclosed_in_quotes = false;
 
 
+function GetSQLite(){
+    if ($_SERVER['HTTP_HOST'] =="localhost:81") {
+        return 'sqlite:C:\work_eDrive\baburaj\gitrepo\subjecttrainer\pJSON\SQLite3\subject_trainer.sqlite';
+    }
+
+    if ($_SERVER['HTTP_HOST'] =="subject-trainer.a-goldmine.com") {
+        return 'sqlite:/home/u246460160/public_html/subject-trainer/pJSON/SQLite3/subject_trainer.sqlite';
+    }
+
+    return "-";
+}
+
 function GetComma($AddComma){
     if ($AddComma) {
         return ',';
@@ -170,7 +182,7 @@ function UpdatePlaceHoldersWithinReadDataSQL($sqlStatment, $ColumnsToBeReturned)
 
 function PrintDataQueryAsJSONTest($sqlStatmentNew){
         //open the database
-        $db = new PDO('sqlite:C:\work_eDrive\baburaj\gitrepo\subjecttrainer\pJSON\SQLite3\subject_trainer.sqlite');
+        $db = new PDO(GetSQLite());
         //$result = $db->query($sqlStatmentNew);
         //print $result;
         //$result = $stmt->fetchALL(PDO::FETCH_CLASS);
@@ -201,7 +213,7 @@ function PrintDataQueryAsJSON($sqlStatment, $ColumnsToBeReturned){
     try
     {       
         //open the database
-        $db = new PDO('sqlite:C:\work_eDrive\baburaj\gitrepo\subjecttrainer\pJSON\SQLite3\subject_trainer.sqlite');
+        $db = new PDO(GetSQLite());
         //$db->setAttribute("PDO::ATTR_ERRMODE", PDO::ERRMODE_EXCEPTION);
         $result = $db->query($sqlStatmentNew);
 
@@ -264,7 +276,7 @@ function GetFirstColumnFirstRow($sqlStatment, $ColumnsToBeReturned){
     try
     {       
         //open the database
-        $db = new PDO('sqlite:C:\work_eDrive\baburaj\gitrepo\subjecttrainer\pJSON\SQLite3\subject_trainer.sqlite');
+        $db = new PDO(GetSQLite());
         $result = $db->query($sqlStatmentNew);
 
         if(isset($result) ) 
@@ -294,7 +306,7 @@ function GetFirstRowAsArray($sqlStatment, $ColumnsToBeReturned){
     try
     {       
         //open the database
-        $db = new PDO('sqlite:C:\work_eDrive\baburaj\gitrepo\subjecttrainer\pJSON\SQLite3\subject_trainer.sqlite');
+        $db = new PDO(GetSQLite());
         $result = $db->query($sqlStatmentNew);
 
         if(isset($result) ) 
@@ -327,7 +339,7 @@ function GetFirstColumnAsCSVString($sqlStatment, $ColumnsToBeReturned){
     try
     {       
         //open the database
-        $db = new PDO('sqlite:C:\work_eDrive\baburaj\gitrepo\subjecttrainer\pJSON\SQLite3\subject_trainer.sqlite');
+        $db = new PDO(GetSQLite());
         $result = $db->query($sqlStatmentNew);
 
         $CSV ="";
@@ -366,7 +378,7 @@ function GetDataAsArray($sqlStatment, $ColumnsToBeReturned){
     try
     {       
         //open the database
-        $db = new PDO('sqlite:C:\work_eDrive\baburaj\gitrepo\subjecttrainer\pJSON\SQLite3\subject_trainer.sqlite');
+        $db = new PDO(GetSQLite());
         $result = $db->query($sqlStatmentNew);
 
         if(isset($result) ) 
@@ -412,7 +424,7 @@ function ExecuteDMLInsertUpdateDelete($InsertStatement, $UpdateStatement, $Delet
     try
     {       
         //open the database
-        $db = new PDO('sqlite:C:\work_eDrive\baburaj\gitrepo\subjecttrainer\pJSON\SQLite3\subject_trainer.sqlite');
+        $db = new PDO(GetSQLite());
         $boolResult = $db->exec($sqlStatmentNew);        
         if ($boolResult === FALSE) {
             print '[';
