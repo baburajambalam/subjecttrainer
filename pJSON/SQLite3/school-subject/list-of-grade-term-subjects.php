@@ -48,4 +48,8 @@
   {
     print '{"Exception" : "'.$e->getMessage().'"}';
   }
+  catch (Exception $e) {
+    print '{"Exception" : "'.$e->getMessage().'"}';
+  }
+
 ?>
